@@ -7,8 +7,26 @@
     <title>Video</title>
   </head>
   <body>
-    <video width="100%" height="100%" controls loop poster="Neon.jpg">
-      <source src="Insomnia.mp4.webm" type="video/mp4" />
-    </video>
+    <form>
+      <video width="100%" height="100%" loop poster="Library/Harley.jpg">
+        <source
+          src="Library/Video/Insomnia.mp4.webm"
+          type="video/mp4"
+          id="insomnia"
+        />
+      </video>
+      <input type="button" onclick="playvideo();" value="play" />
+      <input type="button" onclick="pausevideo();" value="pause" />
+    </form>
+    <script>
+      function playvideo() {
+        var x = document.getElementsByTagName("video")[0];
+        x.play();
+      }
+      function pausevideo() {
+        var y = document.getElementsByTagName("video")[0];
+        y.pause();
+      }
+    </script>
   </body>
 </html>
