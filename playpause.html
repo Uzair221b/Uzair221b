@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>playpause</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <button onclick="pauseplay()">pause/play</button>
+      <button onclick="big()">big</button>
+      <button onclick="small()">small</button>
+      <button onclick="normal()">normal</button><br /><br />
+      <video id="game" width="450" poster="images/Library/lamborghini.jpg" loop>
+        <source src="images/Library/Video/Gameclip.webm" />
+      </video>
+    </div>
+    <script>
+      var video = document.getElementById("game");
+      function pauseplay() {
+        if (video.paused) video.play();
+        else video.pause();
+      }
+      function big() {
+        video.Width = 600;
+      }
+      function small() {
+        video.Width = 300;
+      }
+      function normal() {
+        video.Width = 450;
+      }
+    </script>
+  </body>
+</html>
