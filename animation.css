@@ -1,0 +1,19 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+#Divergent {
+  height: 300px;
+  width: 500px;
+  background-color: rgb(40, 206, 192);
+  animation-name: anime;
+  animation-duration: 3s;
+}
+@keyframs anime {
+  form {
+    background-color: rgb(40, 206, 192);
+  }
+  to {
+    background-color: rgb(162, 206, 40);
+  }
+}
