@@ -1,0 +1,23 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(61, 235, 26);
+}
+#divt {
+  transform: translate(500px, 800px);
+}
+.divr {
+  background-color: rgb(221, 231, 79);
+  transform: rotateX(45deg);
+  transform: rotateY(180deg);
+  transform: rotateZ(180deg);
+}
+#divs {
+  background-color: rgb(236, 134, 61);
+  transform: scale(1, 1);
+  transform: rotate(90deg);
+}
+#sk {
+  background-color: rgb(67, 171, 231);
+  transform: skew(20deg, 10deg);
+}
