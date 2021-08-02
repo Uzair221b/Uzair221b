@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+    <style>
+      #mycanvas1 {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="mycanvas1" width="800" height="800"></canvas>
+    <script>
+      /* var canvas = document.getElementById("mycanvas1");
+       var ctx = canvas.getContext("2d");
+       var grd = ctx.createLinearGradient(0, 0, 200, 200);
+       grd.addColorStop(0, "yellow");
+       grd.addColorStop(1, "grey");
+       ctx.fillStyle = grd;
+       ctx.fillRect(50, 50, 300, 200);*/
+      var canvas = document.getElementById("mycanvas1");
+      var ctx = canvas.getContext("2d");
+      var grd = ctx.createRadialGradient(300, 300, 0, 300, 300, 300);
+      grd.addColorStop(0, "yellow");
+      grd.addColorStop(0.2, "blue");
+      grd.addColorStop(0.4, "green");
+      grd.addColorStop(1, "grey");
+      ctx.fillStyle = grd;
+      ctx.fillRect(50, 50, 300, 200);
+    </script>
+  </body>
+</html>
