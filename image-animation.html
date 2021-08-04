@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image-animation</title>
+  </head>
+  <style>
+    #one {
+      background-image: url(Library/Katanaanime.jpg);
+      border-image-repeat: repeat;
+      width: 1000px;
+      height: 1000px;
+      animation: walk-east 1s steps(8) infinite alternate;
+    }
+    @keyframes walk-east {
+      from {
+        background-position: 0px;
+      }
+      to {
+        background-position: 960px;
+      }
+    }
+  </style>
+  <body>
+    <div id="one"></div>
+  </body>
+</html>
